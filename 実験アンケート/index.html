@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>アンケートフォーム</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Hiragino Sans', 'Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .container {
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 40px;
+            max-width: 600px;
+            width: 100%;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 28px;
+            margin-bottom: 12px;
+            text-align: center;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 16px;
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .instruction {
+            background: #f8f9fa;
+            border-left: 4px solid #667eea;
+            padding: 16px;
+            margin-bottom: 30px;
+            border-radius: 4px;
+        }
+
+        .instruction p {
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .form-section {
+            margin-bottom: 24px;
+        }
+
+        .form-number {
+            display: inline-block;
+            background: #667eea;
+            color: white;
+            width: 32px;
+            height: 32px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 32px;
+            font-weight: bold;
+            margin-right: 12px;
+        }
+
+        .form-title {
+            font-size: 18px;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 12px;
+        }
+
+        .form-link {
+            display: block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            text-decoration: none;
+            padding: 16px 24px;
+            border-radius: 8px;
+            text-align: center;
+            font-weight: 500;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 12px;
+        }
+
+        .form-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 8px 16px rgba(102, 126, 234, 0.3);
+        }
+
+        .arrow {
+            display: block;
+            text-align: center;
+            color: #999;
+            font-size: 24px;
+            margin: 20px 0;
+        }
+
+        .note {
+            background: #fff3cd;
+            border: 1px solid #ffeaa7;
+            border-radius: 4px;
+            padding: 12px;
+            margin-top: 30px;
+            color: #856404;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>アンケートフォーム</h1>
+        <p class="subtitle">ご協力ありがとうございます</p>
+
+        <div class="instruction">
+            <p><strong>📝 回答方法</strong></p>
+            <p>以下の2つのフォームに、<strong>順番に</strong>ご回答ください。1つ目のフォームへの回答が完了したら、2つ目のフォームにお進みください。</p>
+        </div>
+
+        <div class="form-section">
+            <div class="form-title">
+                <span class="form-number">1</span>
+                1つ目のフォーム
+            </div>
+            <a href="https://example.com/form1" class="form-link" target="_blank">
+                フォーム1を開く →
+            </a>
+        </div>
+
+        <div class="arrow">↓</div>
+
+        <div class="form-section">
+            <div class="form-title">
+                <span class="form-number">2</span>
+                2つ目のフォーム
+            </div>
+            <a href="https://example.com/form2" class="form-link" target="_blank">
+                フォーム2を開く →
+            </a>
+        </div>
+
+        <div class="note">
+            ⚠️ 必ず1つ目のフォームから順番に回答してください。
+        </div>
+    </div>
+</body>
+</html>
